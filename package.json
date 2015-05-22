@@ -1,0 +1,14 @@
+{
+  "name": "meadowlark",
+  "version": "0.0.1",
+  "description": "The exercises in Web Development with Node & Express by Ethan Brown",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prateek Jadhwani",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

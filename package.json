@@ -9,6 +9,7 @@
   "author": "Prateek Jadhwani",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.12.4"
+    "express": "^4.12.4",
+    "express3-handlebars": "^0.5.2"
   }
 }

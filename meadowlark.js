@@ -14,11 +14,20 @@ app.set("port", process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
 
+var fortunes = [
+	'Conquer your fears or they will conquer you',
+	'Rivers need Springs',
+	'Do not fear what you dont know',
+	'You will have a pleasant surprise',
+	'Whenever possible, keep it simple'
+];
+
 app.get('/', function(req, res) {
 	res.render('home');
 });
 app.get('/about', function(req, res) {
-	res.render('about');
+	var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+	res.render('about', {fortune : randomFortune});
 });
 
 // custom 404

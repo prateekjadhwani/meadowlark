@@ -9,7 +9,7 @@ var handlebars = require('express3-handlebars')
 						'defaultLayout' : 'main'
 					});
 app.engine('handlebars', handlebars.engine);
-app.set('view engine', 'handlebars')
+app.set('view engine', 'handlebars');
 
 app.set("port", process.env.PORT || 3000);
 

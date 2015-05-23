@@ -24,7 +24,10 @@ app.get('/', function(req, res) {
 	res.render('home');
 });
 app.get('/about', function(req, res) {
-	res.render('about', { fortune : fortunes.getFortune() });
+	res.render('about', { 
+		fortune : fortunes.getFortune(),
+		pageTestScript: '/qa/test-about.js'
+	});
 });
 
 // custom 404
